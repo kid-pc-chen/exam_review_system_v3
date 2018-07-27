@@ -1,6 +1,6 @@
-import { createStore } from 'redux';
-import onUserChange from '../reducers/reducers.js';
+import { createStore } from 'redux'
+import onUserChange from '../reducers/reducers.js'
 
-let store = createStore(onUserChange);
+let store = createStore(onUserChange)
 
-export default store;
+export default store

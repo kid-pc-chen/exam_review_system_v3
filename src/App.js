@@ -1,31 +1,30 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import './App.css'
 
-import { Provider } from 'react-redux';
-import store from './store/store.js';
-import ExamReviewer from './components/components.js';
-
+import { Provider } from 'react-redux'
+import store from './store/store.js'
+import ExamReviewer from './components/components.js'
 
 class App extends Component {
-  render() {
+  render () {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Exam Review System v3.</h1>
+      <div className='App'>
+        <header className='App-header'>
+          <img src={logo} className='App-logo' alt='logo' />
+          <h1 className='App-title'>Welcome to Exam Review System v3.</h1>
         </header>
-        <p className="App-intro">
+        <p className='App-intro'>
           This toy project helps me to learn React.js + react-redux.
         </p>
-        <div className="App-content">
+        <div className='App-content'>
           <Provider store={store}>
-            <ExamReviewer/>
-          </Provider>          
+            <ExamReviewer />
+          </Provider>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
